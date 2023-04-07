@@ -4,11 +4,10 @@ with the email as a parameter and displays the body of the response
 """
 
 import sys
-import urllib.request
+import request
 
 if __name__ == "__main__":
     url = sys.argv[1]
-
-    request = urllib.request.Request(url)
-    with urllib.request.urlopen(request) as response:
-        print(dict(response.headers).get("X-Request-Id"))
+    payload = {'email': sys.argv[2]}
+    r = requests.post(url, data=payload)
+    print(r.text)

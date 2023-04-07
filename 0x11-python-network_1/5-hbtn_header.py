@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Takes in a url, 
+"""Takes in a url,
 -sends a request to the url and displays variable"""
 
 import sys
