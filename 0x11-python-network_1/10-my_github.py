@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""takes a github username and password 
+"""takes a github username and password
 -and uses the github API to display the id"""
 
 
